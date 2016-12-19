@@ -1,0 +1,5 @@
+package regularPolygon;
+
+public abstract class AbstractRegPolygon {
+
+}

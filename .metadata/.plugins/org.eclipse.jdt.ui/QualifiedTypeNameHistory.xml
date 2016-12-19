@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="algo.IUtility"/>
+<fullyQualifiedTypeName name="algo.MathsUtility"/>
+<fullyQualifiedTypeName name="algo.IRecursive"/>
+<fullyQualifiedTypeName name="algo.RecursiveImplention"/>
+<fullyQualifiedTypeName name="regularPolygon.RegPolygonFactory"/>
+<fullyQualifiedTypeName name="regularPolygon.Square"/>
+<fullyQualifiedTypeName name="regularPolygon.IRegularPolygon"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,47 @@
+package regularPolygon;
+
+public class RegularPentagon implements IRegularPolygon{
+    
+    private final int numberOfSide;
+	
+	private double sideLength;
+	
+	private double apothem;
+	
+	public RegularPentagon(double sideLength,double apothem){
+		if(sideLength < 0)
+			throw new IllegalArgumentException("Negative number is not allowed");
+		
+		this.sideLength=sideLength;
+		this.apothem=apothem;
+		this.numberOfSide=5;
+		
+	}
+	@Override
+	public int NumberOfSides() {
+		
+		return numberOfSide;
+	}
+
+	@Override
+	public double SideLength() {
+		
+		return sideLength;
+	}
+
+	@Override
+	public double getPerimeter() {
+		
+		return numberOfSide*sideLength;
+	}
+
+	@Override
+	public double getArea() {
+		
+		return 2.5 * sideLength * apothem;
+	}
+	@Override
+	public String toString(){
+		return "[ Area of RegularPentagon "+ getArea()+" , Perimeter of RegularPentagon "+ getPerimeter()+"]";
+	}
+}

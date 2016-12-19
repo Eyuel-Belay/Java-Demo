@@ -1,0 +1,68 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import regularPolygon.RegPolygonFactory;
+import regularPolygon.Square;
+
+public class SquareTest {
+	private final String NAN = "Not allowed";
+	RegPolygonFactory regularPolygon = new RegPolygonFactory();
+	Square square;
+
+	@Test
+	// Test the Area Of Square with valid input(side=4)
+	public void testAreaOfSquare_ValidArgument() {
+		// Given
+		double sideLength = 4;
+		square = new Square(sideLength);
+		// var square = regularPolygon.getShape("SQUARE", sideLength);
+		double expected = 16;
+		// when
+		double actual = square.getArea();
+		// Then
+		assertEquals(expected, actual, 0.0001);
+	}
+
+	@Test
+	public void testAreaOfSquare_InValidArgument() {
+		// Given
+		double sideLength = -6;
+		square = new Square(sideLength);
+		// var square = regularPolygon.getShape("SQUARE", sideLength);
+		String expected = NAN;
+		// when
+		double actual = square.getArea();
+		// Then
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testPerimeterOfSquareWhenZero() {
+		// Given
+		double sideLength = 0;
+		square = new Square(sideLength);
+		// var square = regularPolygon.getShape("SQUARE", sideLength);
+		double expected = 0;
+		// when
+		double actual = square.getPerimeter();
+		// Then
+		assertEquals(expected, actual, 0.0001);
+	}
+
+	@Test
+	public void testPerimeterOfSquare_InValidArgument() {
+		// Given
+		double sideLength = -6;
+		square = new Square(sideLength);
+		// var square = regularPolygon.getShape("SQUARE", sideLength);
+		String expected = NAN;
+		// when
+		double actual = square.getPerimeter();
+		// Then
+		assertEquals(expected, actual);
+	}
+
+}

@@ -1,0 +1,8 @@
+package regularPolygon;
+
+public interface IRegularPolygon {
+	int NumberOfSides(int numberOfSide); 
+    double SideLength(int length);
+    double getPerimeter();
+    double getArea();
+}

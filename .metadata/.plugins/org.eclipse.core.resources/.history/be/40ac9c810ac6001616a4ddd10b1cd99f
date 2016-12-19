@@ -1,0 +1,11 @@
+package regularPolygon;
+
+public abstract class AbstractRegularPolygon {
+	 public int NumberOfSides { get; set; }
+     public double SideLength { get; set; }
+     public double getPerimeter()
+     {
+       return NumberOfSides * SideLength;
+     }
+     public double getArea();
+}

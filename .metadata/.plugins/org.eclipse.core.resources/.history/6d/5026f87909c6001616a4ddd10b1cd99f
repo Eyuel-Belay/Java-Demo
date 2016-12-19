@@ -1,0 +1,5 @@
+package regularPolygon;
+
+public interface IRegularPolygon {
+
+}
