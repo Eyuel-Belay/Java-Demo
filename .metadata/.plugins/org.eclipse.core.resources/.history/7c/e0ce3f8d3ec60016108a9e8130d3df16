@@ -3,9 +3,9 @@ package regularPolygon;
 public abstract class AbstractRegPolygon {
  
 	private int numberOfSide;
-	private double sideLength;
+	private int sideLength;
 
-	public AbstractRegPolygon(int numberOfSide, double sideLength) {
+	public AbstractRegPolygon(int numberOfSide, int sideLength) {
 		this.numberOfSide = numberOfSide;
 		this.sideLength = sideLength;
 	}
