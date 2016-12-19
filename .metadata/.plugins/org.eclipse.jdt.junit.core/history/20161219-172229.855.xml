@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MathsUtilityTest" project="muk" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="test.MathsUtilityTest" time="0.0">
+    <testcase name="testPositiveAbsoluteValue" classname="test.MathsUtilityTest" time="0.0"/>
+    <testcase name="testNegativeAbsoluteValue" classname="test.MathsUtilityTest" time="0.0"/>
+    <testcase name="testMuliplyDouble" classname="test.MathsUtilityTest" time="0.0"/>
+    <testcase name="testDifferenceDouble" classname="test.MathsUtilityTest" time="0.0"/>
+    <testcase name="testDifferenceDoubleNegative" classname="test.MathsUtilityTest" time="0.0"/>
+    <testcase name="testAddDouble" classname="test.MathsUtilityTest" time="0.0"/>
+    <testcase name="testDivisionDoubleCorrectArgument" classname="test.MathsUtilityTest" time="0.0"/>
+  </testsuite>
+</testrun>
