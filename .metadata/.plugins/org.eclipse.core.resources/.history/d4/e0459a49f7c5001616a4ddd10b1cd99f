@@ -1,0 +1,34 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import algo.RecursiveImplention;
+
+public class RecursiveTest {
+	RecursiveImplention recursiveImp = new RecursiveImplention();
+
+	@Test
+	public void testFactorial() {
+
+		// Given
+		int a = 4;
+
+		int expected = 24;
+		// When
+		double actual = recursiveImp.factorial(a);
+		// Then
+		assertEquals(expected, actual, 0.00001);
+	}
+	public void testFactorialWhenZero() {
+
+		// Given
+		int a = 0;
+
+		int expected = 1;
+		// When
+		double actual = recursiveImp.factorial(a);
+		// Then
+		assertEquals(expected, actual, 0.00001);
+	}
+}

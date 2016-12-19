@@ -1,0 +1,23 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import algo.MathsUtility;
+public class MathsUtilityTest {
+   MathsUtility mathsUtil=new  MathsUtility();
+	@Test
+	public void testAddMethod() {
+		//Given
+		double a =5.0;
+		double b=7.4;
+		double expected=12.4;
+		// When 
+		double actual=mathsUtil.add(a,b);
+		//Then
+		assertEquals(expected, actual, 0.00001);
+		
+	}
+	
+
+}
