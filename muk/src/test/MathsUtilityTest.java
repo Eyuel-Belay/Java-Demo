@@ -13,11 +13,11 @@ public class MathsUtilityTest {
 	@Test
 	public void testAddDouble() {
 		// Given
-		double a = 0.0;
-		double b = 0.0;
+		double first = 0.0;
+		double second = 0.0;
 		double expected = 0;
 		// When
-		double actual = mathsUtil.add(a, b);
+		double actual = mathsUtil.add(first, second);
 		// Then
 		assertEquals(expected, actual, 0.00001);
 
@@ -26,11 +26,11 @@ public class MathsUtilityTest {
 	@Test
 	public void testMuliplyDouble() {
 		// Given
-		double a = 0.0;
-		double b = 0.0;
+		double first = 0.0;
+		double second = 0.0;
 		double expected = 0;
 		// When
-		double actual = mathsUtil.multiply(a, b);
+		double actual = mathsUtil.multiply(first, second);
 		// Then
 		assertEquals(expected, actual, 0.00001);
 	}
@@ -38,11 +38,11 @@ public class MathsUtilityTest {
 	@Test
 	public void testDifferenceDouble() {
 		// Given
-		double a = 5.0;
-		double b = 7.4;
+		double first = 5.0;
+		double second = 7.4;
 		double expected = -2.4;
 		// When
-		double actual = mathsUtil.subtract(a, b);
+		double actual = mathsUtil.subtract(first, second);
 		// Then
 		assertEquals(expected, actual, 0.00001);
 	}
@@ -50,11 +50,11 @@ public class MathsUtilityTest {
 	@Test
 	public void testDifferenceDoubleNegative() {
 		// Given
-		double a = 5.0;
-		double b = -7.4;
+		double first = 5.0;
+		double second = -7.4;
 		double expected = 12.4;
 		// When
-		double actual = mathsUtil.subtract(a, b);
+		double actual = mathsUtil.subtract(first, second);
 		// Then
 		assertEquals(expected, actual, 0.00001);
 	}
@@ -62,11 +62,11 @@ public class MathsUtilityTest {
 	@Test
 	public void testDivisionDoubleCorrectArgument() {
 		// Given
-		double a = 4.0;
-		double b = 2.0;
+		double first = 4.0;
+		double second = 2.0;
 		double expected = 2.0;
 		// When
-		double actual = mathsUtil.multiply(a, b);
+		double actual = mathsUtil.multiply(first, second);
 		// Then
 		assertEquals(expected, actual, 0.00001);
 	}
@@ -74,10 +74,10 @@ public class MathsUtilityTest {
 	@Test
 	public void testPositiveAbsoluteValue() {
 		// Given
-		double a = 4.0;
+		double first = 4.0;
 		double expected = 4.0;
 		// When
-		double actual = mathsUtil.absolute(a);
+		double actual = mathsUtil.absolute(first);
 		// Then
 		assertEquals(expected, actual, 0.00001);
 	}
@@ -85,10 +85,10 @@ public class MathsUtilityTest {
 	@Test
 	public void testNegativeAbsoluteValue() {
 		// Given
-		double a = -5.0;
+		double first = -5.0;
 		double expected = 5.0;
 		// When
-		double actual = mathsUtil.absolute(a);
+		double actual = mathsUtil.absolute(first);
 		// Then
 		assertEquals(expected, actual, 0.00001);
 	}

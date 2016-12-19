@@ -1,10 +1,10 @@
 package algo;
 
 public interface IRecursive {
-  int factorial(int n);
+  int factorial(int number);
   int power(int base, int exponent);
-  int sum(int n);
-  int sum(int num[]);
-  int fibonacci(int first, int second);
+  int sum(int number);
+  int sum(int number[]);
+  int fibonacci(int number);
   
 }

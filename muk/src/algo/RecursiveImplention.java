@@ -1,7 +1,5 @@
 package algo;
 
-import static org.junit.Assert.fail;
-
 public class RecursiveImplention implements IRecursive {
 
 	@Override
@@ -14,26 +12,45 @@ public class RecursiveImplention implements IRecursive {
 
 	@Override
 	public int power(int base, int exponent) {
-		// TODO Auto-generated method stub
-		return 0;
+
+       if(exponent==0) return 1;
+       else if(exponent==1)return base;
+       else
+		return base*power(base, exponent-1);
 	}
 
 	@Override
-	public int sum(int n) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int sum(int number) {
+		if(number==0) return 0;
+		else if(number==1) return 1;
+		else
+			return number+ sum(number-1);
 	}
 
 	@Override
 	public int sum(int[] num) {
-		// TODO Auto-generated method stub
-		return 0;
+		int sum=0;
+		for(int i=0; i< num.length; i++){
+			sum+=num[i];
+		}
+		return sum;
 	}
 
 	@Override
-	public int fibonacci(int first, int second) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int fibonacci(int number) {
+		if(number==0) return 0;
+		else if(number==1)return 1;
+		else
+		return fibonacci(number-1)+fibonacci(number-2);
+	}
+	
+	public double averageArraySum(int[] number) {
+		int sum=0;
+		int length=number.length;
+		for(int i=0; i< length; i++){
+			sum+=number[i];
+		}
+		return sum/length;
 	}
 
 }
